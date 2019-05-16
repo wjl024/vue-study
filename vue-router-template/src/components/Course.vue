@@ -7,6 +7,14 @@
 		<el-button type="warning">警告按钮</el-button>
 		<el-button type="danger">危险按钮</el-button>
 		<el-button type="text" @click="open">点击打开 Message Box</el-button>
+		<el-radio v-model="radio" label="1">备选项</el-radio>
+		<el-radio v-model="radio" label="2">备选项</el-radio>
+		<el-button size="mini" round>超小按钮</el-button>
+		<el-button-group>
+			<el-button type="primary" icon="el-icon-edit"></el-button>
+			<el-button type="primary" icon="el-icon-share"></el-button>
+			<el-button type="primary" icon="el-icon-delete"></el-button>
+		</el-button-group>
 	</el-row>
 </template>
 
@@ -14,7 +22,9 @@
 export default {
 	name: 'Course',
 	data() {
-		return {};
+		return {
+			radio:'2'
+		};
 	},
 	methods: {
 		open() {
